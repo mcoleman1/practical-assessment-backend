@@ -3,6 +3,8 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const app = express();
 const axios = require('axios');
+
+// This should be stored on a server securely, but for demo purposes, it will be left here
 const bearerToken = 'AAAAAAAAAAAAAAAAAAAAAAY8aQEAAAAALDh2wkknhF9KpvY16L7r44VYQvM%3DGtTsDNEUeQ0hgyeMW0K4eywwo77gV5CRfhLbcY1frh3TTHg5ps';
 
 app.use(cors());
