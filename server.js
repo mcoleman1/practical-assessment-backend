@@ -23,13 +23,13 @@ app.post('/api/tweets', (req, res) => {
   if (query.includes("#")) {
     query = query.replace('#', '%23');
   }
-  axios.get(`https://api.twitter.com/2/tweets/search/recent?query=${query}&max_results=${maxResults}`, {
+  axios.get(`https://api.twitter.com/2/tweets/search/recent?query=${query}&max_results=${maxResults}&tweet.fields=created_at,source`, {
     headers: {
       'Authorization': `Bearer ${bearerToken}`
     }
   })
   .then(response => {
-    res.send(response.data.data).status(200);
+    res.send(response.data).status(200);
   })
   .catch(err => console.error(err));
 });

@@ -8,5 +8,5 @@ This application provides one function: it acts as a proxy server between a web-
 
 ## Development server
 
-Run `npm run dev` from the project root for a dev server. The server will be hosted at `http://localhost:3000` by default. 
+Run `npm install` to install all necessary dependencies then run `npm run dev` from the project root for a dev server. The server will be hosted at `http://localhost:3000` by default. 
 
